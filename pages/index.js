@@ -71,8 +71,6 @@ export const getStaticProps = async () => {
     const name = "Souvik"
     const date = new Date()
     let dateValue = date.toUTCString()
-    const {getAllData} = require('../src/lib/airtable')
-    let data = getAllData()
-    console.log(data)
+    
     return { props: { name, dateValue } }
 }
