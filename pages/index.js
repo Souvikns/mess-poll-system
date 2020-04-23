@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import tinyTime from 'tinytime'
 import {
     makeStyles,
@@ -5,8 +6,12 @@ import {
     Container,
     Card,
     Grid,
-    ThemeProvider
+    ThemeProvider,
+    Button,
+    TextField
 } from '@material-ui/core'
+
+import {Rating} from '@material-ui/lab'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -21,6 +26,7 @@ const useStyles = makeStyles(theme => ({
 export default () => {
 
     const classes = useStyles();
+    const [value, setValue] = useState(0)
 
     return (
         <div>
@@ -46,6 +52,17 @@ export default () => {
                 </Grid>
 
             </Grid>
+
+
+            <center>
+                <Rating value={value} onChange={(event, newValue)=>{
+                    setValue(newValue)
+                    }}/>
+            </center>
+
+            <center>
+                <TextField label="Comment" />
+            </center>
         </div>
     )
 }
