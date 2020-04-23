@@ -1,18 +1,15 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import tinyTime from 'tinytime'
 import {
     makeStyles,
-    Typography,
-    Container,
     Card,
     Grid,
-    ThemeProvider,
-    Button,
     TextField
 } from '@material-ui/core'
 
-import {Rating} from '@material-ui/lab'
+import { Rating } from '@material-ui/lab'
 
+// custom made styles 
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -27,6 +24,7 @@ export default () => {
 
     const classes = useStyles();
     const [value, setValue] = useState(0)
+    const [comment, setComment] = useState('')
 
     return (
         <div>
@@ -53,24 +51,29 @@ export default () => {
 
             </Grid>
 
-
+            {
+                /**
+                    value of the rating bar is binded with 
+                    the value object from the hook 
+                 */
+            }
             <center>
-                <Rating value={value} onChange={(event, newValue)=>{
+                <Rating value={value} onChange={(event, newValue) => {
                     setValue(newValue)
-                    }}/>
+                }} />
             </center>
 
             <center>
-                <TextField label="Comment" />
+                <TextField value={comment} onChange={
+                    (event, newValue) => {
+                        setComment(newValue)
+                    }
+                } label="Comment" />
             </center>
         </div>
     )
 }
 
 export const getStaticProps = async () => {
-    const name = "Souvik"
-    const date = new Date()
-    let dateValue = date.toUTCString()
-    
-    return { props: { name, dateValue } }
+    return { props: {} }
 }
