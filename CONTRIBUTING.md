@@ -22,7 +22,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## Pull Requests 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build. 
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+2. Update the [README.md](https://github.com/cu-unofficial/mess-poll-system/blob/master/README.md) with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. We strictly use GitFlow and try to have a linear merge. Please follow the guidelines below.
 
 
