@@ -31,7 +31,7 @@ and another where everyone can see the feedback chart.
 - [prop-types](https://www.npmjs.com/package/prop-types): Runtime type checking for React props and similar objects.
 - [clsx](https://www.npmjs.com/package/clsx): 
 
-# Contributing 
+# Contribution Guidelines
 
 To contribute to this repository read the [CONTRIBUTING.md](https://github.com/cu-unofficial/mess-poll-system/blob/master/CONTRIBUTING.md)
 
