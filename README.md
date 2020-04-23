@@ -33,5 +33,5 @@ and another where everyone can see the feedback chart.
 
 # Contributing 
 
-To contribute to this repository read the CONTRIBUTING.md 
+To contribute to this repository read the [CONTRIBUTING.md](https://github.com/cu-unofficial/mess-poll-system/blob/master/CONTRIBUTING.md)
 
