@@ -33,5 +33,5 @@ and another where everyone can see the feedback chart.
 
 # Contributing 
 
-To contribute to this repository read the CONTRIBUTION.md 
+To contribute to this repository read the CONTRIBUTING.md 
 
