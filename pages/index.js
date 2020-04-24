@@ -35,6 +35,7 @@ export default () => {
     const classes = useStyles();
     const [value, setValue] = useState(0)
     const [comment, setComment] = useState('')
+    const today = tinyTime('{Mo}/{DD}/{YYYY}').render(new Date)
 
     return (
         <div>
@@ -93,8 +94,7 @@ export default () => {
                 <center>
                     <Button variant="contained" color="primary" onClick={(evt)=>{
                         evt.preventDefault()
-                        const date = new Date()
-                        addPoll(date.toUTCString,value,comment).then(check=>{
+                        addPoll(today,value,comment).then(check=>{
                             if(!check){
                                 console.log("fail")
                             }
