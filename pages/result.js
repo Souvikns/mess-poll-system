@@ -4,14 +4,24 @@
 
 import React from 'react'
 import { Line, Bar, Doughnut } from 'react-chartjs-2'
-import { Container } from '@material-ui/core'
+import { Container,makeStyles } from '@material-ui/core'
+
+const useStyles = makeStyles(theme=>({
+    space: {
+        marginTop: theme.spacing(15)
+    }
+}))
 
 export default ({ data, pieChartData, barChartDate }) => {
+
+    const classes = useStyles()
 
     return (
         <div>
             <Container>
+                <center>
                 <h1>Result Page</h1>
+                </center>
             </Container>
             <Container>
                 <Bar data={{
@@ -28,6 +38,8 @@ export default ({ data, pieChartData, barChartDate }) => {
                     }
                 }} height={100} height={100} />
             </Container>
+
+            <Container className={classes.space} />
 
             <Container>
                 <Doughnut data={{
@@ -50,6 +62,8 @@ export default ({ data, pieChartData, barChartDate }) => {
                     }
                 }} height={100} height={100} />
             </Container>
+
+            <Container className={classes.space} />
 
         </div>
     )

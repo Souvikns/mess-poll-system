@@ -8,6 +8,7 @@ import {
     Container,
     Button
 } from '@material-ui/core'
+import router from 'next/router'
 
 import { Rating } from '@material-ui/lab'
 
@@ -98,7 +99,7 @@ export default () => {
                             if(!check){
                                 console.log("fail")
                             }
-                            console.log("success")
+                            router.push('/result')
                         }).catch(err=>{
                             console.log(err)
                         })
