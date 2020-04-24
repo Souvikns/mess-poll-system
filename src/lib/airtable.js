@@ -28,7 +28,7 @@ async function addPoll(date, rating, comment) {
     await base('Mess_Rating').create([{
         "fields": {
             "Date": date,
-            "Rating": rating,
+            "Rating": `${rating}`,
             "Comment": comment
         }
     }], (err, records) => {
