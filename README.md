@@ -1,6 +1,7 @@
 # mess-poll-system
  Collects and shows feedback for mess 
 
+[![GitHub license](https://img.shields.io/github/license/cu-unofficial/mess-poll-system?style=plastic)](https://github.com/cu-unofficial/mess-poll-system/blob/master/LICENSE)
 
 ## Introduction 😎
 This is a web application for polling and reviewing the polls for the mess food quality and gathering feedback. 
